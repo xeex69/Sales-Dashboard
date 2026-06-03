@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, Badge } from '@/components/atoms';
-import { SalesDataPoint } from '@/types/sales';
+import type { SalesDataPoint } from '@/types/sales';
 
 interface SalesStatsProps {
   data: SalesDataPoint[];

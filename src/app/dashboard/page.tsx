@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { DashboardTemplate } from '@/components/templates';
 import {
   SalesBarChart,
@@ -9,14 +9,14 @@ import {
   SalesStats,
 } from '@/components/organisms';
 import { ChartHeader, FilterInput, ChartTypeToggle } from '@/components/molecules';
-import { mockSalesData, getDataByYear, getAllYears, filterByThreshold } from '@/data/mockSalesData';
-import { ChartType } from '@/types/sales';
+import { getDataByYear, getAllYears, filterByThreshold } from '@/data/mockSalesData';
+import type { ChartType, SalesDataPoint } from '@/types/sales';
 
 export default function Dashboard() {
   const [selectedYear, setSelectedYear] = useState<number>(2024);
   const [chartType, setChartType] = useState<ChartType['type']>('bar');
   const [filterThreshold, setFilterThreshold] = useState<number>(0);
-  const [filteredData, setFilteredData] = useState<any[]>([]);
+  const [filteredData, setFilteredData] = useState<SalesDataPoint[]>([]);
   const [isFiltered, setIsFiltered] = useState<boolean>(false);
 
   const availableYears = getAllYears();

@@ -1,4 +1,4 @@
-import { YearlyData } from '@/types/sales';
+import type { YearlyData, SalesDataPoint } from '@/types/sales';
 
 // Mock sales data inspired by Kaggle datasets
 // Generated data represents realistic sales patterns with seasonal variations
@@ -66,6 +66,6 @@ export const getAllYears = () => {
 };
 
 // Utility function to filter data by threshold
-export const filterByThreshold = (data: any[], threshold: number) => {
+export const filterByThreshold = (data: SalesDataPoint[], threshold: number) => {
   return data.filter((item) => item.sales >= threshold);
 };
