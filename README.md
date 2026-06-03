@@ -322,7 +322,8 @@ This project is open source and available for learning and personal use.
 
 ## 👨‍💻 Author
 
-Created as a comprehensive Next.js 15 + TypeScript + Tailwind CSS project demonstrating modern web development practices.
+Tushar Bhardwaj
+
 
 ---
 
