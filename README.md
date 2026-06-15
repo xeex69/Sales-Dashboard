@@ -283,21 +283,9 @@ interface ChartType {
 6. **Accessibility**: Semantic HTML and ARIA labels
 7. **Documentation**: Comprehensive comments and README
 
-## 🚀 Deployment
 
-### Deploy to Vercel (Recommended)
-```bash
-# Install Vercel CLI
-npm i -g vercel
 
-# Deploy
-vercel
-```
 
-### Deploy to Other Platforms
-- **Netlify**: Connect GitHub repo and auto-deploy
-- **Docker**: Create Dockerfile for containerization
-- **AWS**: Use Amplify or EC2 for deployment
 
 ## 📚 Learning Resources
 
@@ -329,4 +317,4 @@ Tushar Bhardwaj
 
 **Happy coding!** 🎉
 
-For questions or support, feel free to reach out or open an issue.
+
